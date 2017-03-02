@@ -16,13 +16,11 @@
     $ctrl.updatePhotos = function (tags) {
       flickrService.get(tags.tags).$promise.then(function (d) {
         $ctrl.photos = d.photos;
-        console.log($ctrl.photos);
       });
     }
 
 
     function addImage(e, params) {
-      console.log(params);
       choosedImages[params.id] = params;
     }
 

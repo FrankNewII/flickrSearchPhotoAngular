@@ -1,9 +1,8 @@
 (function () {
 
 angular.module('App').service('FlickrModel', ['$resource', FlickrModel]);
-  console.log('Model');
-function FlickrModel($resource) {
-  console.log('Model2');
+
+  function FlickrModel($resource) {
   var model = $resource('https://api.flickr.com/services/rest/?method=:method&name=value&api_key=:apiKey&tags=:tags&format=:format&nojsoncallback=1&per_page=:per_page', {
     method: "@method",
     apiKey: "@apiKey",

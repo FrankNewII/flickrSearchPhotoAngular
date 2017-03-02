@@ -13,7 +13,6 @@
   function flickrSearch() {
 
     var $ctrl = this;
-    console.log(this);
     $ctrl.search = function (v) {
       $ctrl.updatePhotos({tags: v});
     };
