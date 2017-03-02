@@ -1,0 +1,11 @@
+<div class="row">
+    <div ng-repeat="photo in $ctrl.searchedPhotos.photo">
+        <found-photo server="{{photo.server}}"
+                     id="{{photo.id}}"
+                     secret="{{photo.secret}}"
+                     title="{{photo.title}}"
+                     is-choosed="photo.isChoosed"
+                     add-image="$ctrl.addImage({})">
+        </found-photo>
+    </div>
+</div>

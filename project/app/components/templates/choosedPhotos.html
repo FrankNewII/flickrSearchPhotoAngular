@@ -1,0 +1,10 @@
+<div class="row">
+    <div ng-repeat="photo in $ctrl.choosedPhotos">
+        <found-photo server="{{photo.server}}"
+                     id="{{photo.id}}"
+                     secret="{{photo.secret}}"
+                     title="{{photo.title}}"
+                     is-choosed="photo.isChoosed">
+        </found-photo>
+    </div>
+</div>

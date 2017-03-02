@@ -1,0 +1,13 @@
+<div class="col-lg-2 col-md-2 col-xs-6">
+    <a class="thumbnail"
+       ng-class="{'active': $ctrl.isChoosed}"
+       href="#"
+       ng-click="$ctrl.choosePhoto()">
+
+        <img class="img-responsive"
+             style="height: 100px;"
+             ng-src="https://c1.staticflickr.com/1/{{::$ctrl.server}}/{{::$ctrl.id}}_{{::$ctrl.secret}}_n.jpg"
+             alt="$ctrl.title"
+        />
+    </a>
+</div>
