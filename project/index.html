@@ -10,7 +10,12 @@
     <!-- build:vendor.css -->
     <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.css"/>
     <!-- endbuild -->
-    <link href="css/dist/styles/styles.min.css">
+    <!-- build:css -->
+    <script src="../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/angular-resource/angular-resource.min.js"></script>
+    <script src="../vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <!-- endbuild -->
 </head>
 <body>
     <flickr-gallery></flickr-gallery>
@@ -20,10 +25,14 @@
     <script src="../vendor/angular-resource/angular-resource.min.js"></script>
     <script src="../vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
     <!-- endbuild -->
-    <script src="js/app.module.js"></script>
-    <script src="js/models.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/app.bootstrap.js"></script>
+    <!-- build:js -->
+    <script src="app/components/choosedPhotos.js"></script>
+    <script src="app/components/flickrSearchResult.js"></script>
+    <script src="app/components/foundPhoto.js"></script>
+    <script src="app/models/FlickrModel.js"></script>
+    <script src="app/services/FlickrService.js"></script>
+    <script src="app/components/FlickrSearch.js"></script>
+    <script src="app/components/Flickr.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
