@@ -6,4 +6,4 @@
       },
       templateUrl: '../app/components/templates/choosedPhotos.html'
     });
-})()
+})();
