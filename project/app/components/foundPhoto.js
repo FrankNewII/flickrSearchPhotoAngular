@@ -9,7 +9,7 @@
                 isChoosed: '=',
                 addImage: "&"
             },
-            templateUrl: '../app/components/templates/foundPhoto.html',
+            templateUrl: 'html/templates/foundPhoto.html',
             controller: FoundPhotoController
         });
 

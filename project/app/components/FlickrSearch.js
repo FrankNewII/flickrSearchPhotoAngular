@@ -6,7 +6,7 @@
                 timeToUpdate: '@',
                 updatePhotos: '&'
             },
-            templateUrl: '../app/components/templates/flickrSearch.html',
+            templateUrl: 'html/templates/flickrSearch.html',
             controller: flickrSearch
         });
 

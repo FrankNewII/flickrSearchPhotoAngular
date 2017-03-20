@@ -4,6 +4,6 @@
             bindings: {
                 searchedPhotos: '='
             },
-            templateUrl: '../app/components/templates/flickrSearchResult.html'
+            templateUrl: 'html/templates/flickrSearchResult.html'
         });
-})()
+})();

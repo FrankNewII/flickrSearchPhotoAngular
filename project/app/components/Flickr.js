@@ -3,7 +3,7 @@
         .component('flickrGallery', {
             bindings: {},
             controller: LoginController,
-            templateUrl: '../app/components/templates/flickrGallery.html'
+            templateUrl: 'html/templates/flickrGallery.html'
         });
 
     LoginController.$inject = [

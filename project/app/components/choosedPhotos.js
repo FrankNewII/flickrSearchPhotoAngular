@@ -4,6 +4,6 @@
       bindings: {
         choosedPhotos: '='
       },
-      templateUrl: '../app/components/templates/choosedPhotos.html'
+        templateUrl: 'html/templates/choosedPhotos.html'
     });
 })();
