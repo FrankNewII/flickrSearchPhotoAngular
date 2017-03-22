@@ -21,33 +21,33 @@
             vendors: [],
             appModule: {
                 taskName: 'app.module.js',
-                src: 'project/app/app.module.js',
+                src: 'src/app/app.module.js',
                 dest: 'dist/js'
             },
             models: {
                 taskName: 'models.js',
-                src: 'project/app/models/**/*.js',
+                src: 'src/app/models/**/*.js',
                 dest: 'dist/js'
             },
             services: {
                 taskName: 'services.js',
-                src: 'project/app/services/**/*.js',
+                src: 'src/app/services/**/*.js',
                 dest: 'dist/js'
             },
             components: {
                 taskName: 'components.js',
-                src: 'project/app/components/**/*.js',
+                src: 'src/app/components/**/*.js',
                 dest: 'dist/js'
             },
             bootstrap: {
                 taskName: 'app.bootstrap.js',
-                src: 'project/app/app.bootstrap.js',
+                src: 'src/app/app.bootstrap.js',
                 dest: 'dist/js'
             }
         },
         html: {
             taskName: 'html',
-            src: 'project/app/**/*.html',
+            src: 'src/app/**/*.html',
             dest: 'dist/html'
         },
         server: {
@@ -110,7 +110,7 @@
     });
 
     gulp.task('html-replace', function () {
-        return gulp.src('project/app/components/**/*.html')
+        return gulp.src('src/app/components/**/*.html')
             .pipe(gulp.dest('dist/html/'))
             .pipe(connect.reload());
     });
@@ -123,7 +123,7 @@
     });
 
     gulp.task('index.html', function () {
-        gulp.src('project/index.html')
+        gulp.src('src/index.html')
             .pipe(htmlreplace({
                 'vendor.js': {
                     src: config.js.vendors,
